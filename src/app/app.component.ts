@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   }
 
   addHobby() {
-    this.hobbies.push(new FormControl(""));
+    this.hobbies.push(this.fb.control(""));
   }
 
   deleteHobby(index: number) {
